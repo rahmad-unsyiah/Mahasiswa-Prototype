@@ -20,16 +20,15 @@ public class RincianActivity extends AppCompatActivity {
         Intent pesan = getIntent();
         // Ambil data ID yang dikirim dan tampilkan
         long id = pesan.getLongExtra("id", 0);
-        TextView txtId = (TextView) findViewById(R.id.txtId);
-        txtId.setText(Long.toString(id));
-        // Ambil data NIM yang dikirim dan tampilkan
-        String nim = pesan.getStringExtra("nim");
+
+        // Disini ambil data lain dari database
+
+        // Tampilkan NIM
         EditText txtNim = (EditText) findViewById(R.id.txtNIM);
-        txtNim.setText(nim);
-        // Ambil data Nama yang dikirim dan tampilkan
-        String nama = pesan.getStringExtra("nama");
+        txtNim.setText("NIM123...");
+        // Tampilkan Nama
         EditText txtNama = (EditText) findViewById(R.id.txtNama);
-        txtNama.setText(nama);
+        txtNama.setText("Nama123...");
     }
 
     /**

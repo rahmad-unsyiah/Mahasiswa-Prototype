@@ -52,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
         // Kirim ke RincianActivity
         Intent pesan = new Intent(getApplicationContext(), RincianActivity.class);
         pesan.putExtra("id", (long) position); // Kirim id mahasiswa
-        pesan.putExtra("nim", "NIM 123");      // Kirim nim mahasiswa
-        pesan.putExtra("nama", "NAMA 123");    // Kirim nama mahasiswa
         startActivity(pesan);
    }
 }
